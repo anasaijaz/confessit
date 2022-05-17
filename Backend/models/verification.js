@@ -14,7 +14,6 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Verification.init({
-    email: DataTypes.STRING,
     otp: DataTypes.STRING,
     phone: DataTypes.STRING,
     sent_at: DataTypes.DATE

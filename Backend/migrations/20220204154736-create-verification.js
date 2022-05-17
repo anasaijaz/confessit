@@ -8,14 +8,11 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      email: {
+      otp: {
         type: Sequelize.STRING
       },
-      otp: {
-        type: Sequelize.INTEGER
-      },
       phone: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       sent_at: {
         type: Sequelize.TIME

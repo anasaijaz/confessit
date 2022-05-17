@@ -13,6 +13,7 @@ class Verfication_controller {
     // Add a validator
     static async startOTP(req,res) {
 
+
        let user = await User.findOne({
          where:{
            phone:req.body.phone
@@ -24,7 +25,6 @@ class Verfication_controller {
        if(!user){
            await User.create({name: generateUsername(''), phone: req.body.phone})
 
-           return res.status(404).send({error:"This number is not registered with AndWeMet"})
        }
 
        const generatedOTP = otpGenerator.generate(4, { upperCaseAlphabets: false, specialChars: false , digits:true, lowerCaseAlphabets:false });

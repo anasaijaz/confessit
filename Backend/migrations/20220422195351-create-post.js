@@ -14,6 +14,9 @@ module.exports = {
       description: {
         type: Sequelize.STRING
       },
+      user_id: {
+        type: Sequelize.INTEGER
+      },
       image: {
         type: Sequelize.STRING
       },
@@ -26,6 +29,8 @@ module.exports = {
         type: Sequelize.DATE
       }
     });
+
+
   },
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('Posts');
