@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.0",
+    "aws-sdk": "^2.1048.0",
+    "axios": "^0.24.0",
+    "convert-excel-to-json": "^1.7.0",
+    "cors": "^2.8.5",
+    "dotenv-flow": "^3.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "luxon": "^2.2.0",
+    "messagebird": "^3.7.1",
+    "mongoose": "^6.0.13",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "otp-generator": "^4.0.0",
+    "papaparse": "^5.3.1",
+    "passport": "^0.5.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.15.0",
+    "twilio": "^3.71.2",
+    "unique-username-generator": "^1.1.1",
+    "validator": "^13.7.0"
+  }
+}

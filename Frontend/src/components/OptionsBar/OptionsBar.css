@@ -1,0 +1,99 @@
+.links-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.appbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    align-items: center;
+}
+
+button#appreciate {
+    padding: 10px 10px;
+    border: 1px solid red;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+div.message_menu {
+    background: rgba( 255, 255, 255, 0.35);
+    backdrop-filter: blur( 15px);
+    -webkit-backdrop-filter: blur( 15px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    padding: 10px;
+    margin-bottom: 8px;
+    animation-name: fade;
+}
+
+.resultMessage{
+  top: 60px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hoverShadow {
+    transition-duration: 300ms;
+}
+
+.hoverShadow:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button#appreciate:active {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+button.mobile-button {
+    display: none;
+}
+
+.options>button {
+    margin-right: 10px;
+}
+
+.mobile-view-options {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    button.web-button {
+        display: none;
+    }
+    button.mobile-button {
+        display: block;
+    }
+    .web-view-options {
+        display: none;
+    }
+    .mobile-view-options {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 20px;
+    }
+    .appbar {
+      align-items: flex-start;
+    }
+    
+.resultMessage{
+  left: -200px;
+}
+
+}

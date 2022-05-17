@@ -1,0 +1,28 @@
+.celebrate-gif {
+    position: absolute;
+    width: 150px;
+}
+
+.canvas {
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+.root-container {
+    background-color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    .celebrate-gif {
+        width: 100px;
+    }
+    .canvas {
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .celebrate-gif {
+        display: none;
+    }
+}
