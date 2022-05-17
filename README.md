@@ -40,4 +40,7 @@ After setting up the enviroment you can start setting up the database
 Congratulations 🎊 
 You have success fully setuped the project 
 
+Now start the frontend server by ```npm run start```
+and the backend server by ```NODE_ENV=development nodemon app.js```
+
 # start contributing today
