@@ -84,7 +84,7 @@ class Verfication_controller {
                 return res.status(400).send({error:"Incorrect OTP entered"})
             }
             else{
-                const user = await User.findOne({where:{phone:phone}})
+                const user = await User.findOne({where:{phone:phone}, attributes:{exclude:['phone']}})
                 const token = jwt.sign({user}, process.env.JWT_TOKEN,{ expiresIn: '1d' });
                 return res.send({token})
             }
