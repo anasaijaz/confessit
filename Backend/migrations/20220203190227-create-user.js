@@ -11,20 +11,8 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      city: {
-        type: Sequelize.STRING
-      },
       phone: {
         type: Sequelize.INTEGER
-      },
-      email: {
-        type: Sequelize.STRING
-      },
-      password: {
-        type: Sequelize.STRING
-      },
-      location: {
-        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
