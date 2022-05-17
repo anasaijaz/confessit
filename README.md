@@ -7,7 +7,7 @@ The confession project is an open source project just to maintain the transparen
 - [ ] Separate the comment from post in react query and backend
 - [ ] Remove redundant code (use hooks)
 - [x] Fix the login crash bug
-
+- [ ] Incorporate Typescript in codebase
 
 ---
 
